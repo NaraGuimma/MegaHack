@@ -23,8 +23,8 @@ import { PrincipalComponent } from './principal/principal.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([ 
-      {path: 'blog', component: BlogComponent}
-      {path: 'principal', component: PrincipalComponent}
+      {path: 'blog', component: BlogComponent},
+      {path: 'principal', component: PrincipalComponent},
       {path: 'cadastro', component: CadastroComponent}
     ]),
   ],
