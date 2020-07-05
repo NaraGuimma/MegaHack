@@ -6,12 +6,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { RouterModule } from '@angular/router';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlogComponent
+    BlogComponent,
+    CadastroComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +24,8 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     RouterModule.forRoot([ 
       {path: 'blog', component: BlogComponent}
+      {path: 'principal', component: PrincipalComponent}
+      {path: 'cadastro', component: CadastroComponent}
     ]),
   ],
   providers: [],
